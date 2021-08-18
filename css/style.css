@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'Bebas Neue Regular';
+  src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('../fonts/BebasNeueRegular.woff2') format('woff2'), url('../fonts/BebasNeueRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue Cyrillic';
+  src: local('Bebas Neue Cyrillic'), local('BebasNeueCyrillic'), url('BebasNeueCyrillic.woff2') format('woff2'), url('BebasNeueCyrillic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 14px;
 }
@@ -8,8 +28,9 @@ body {
   color: #fff;
 }
 
-* {
-  box-sizing: border-box;
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -18,10 +39,17 @@ body {
   margin: auto;
 }
 
+/* Header
+========================================= */
+
 .header {
   background-color: #635854;
   border-bottom: 4px solid #3596F5;
+  margin-bottom: 54px;
 }
+
+/* Navbar
+========================================= */
 
 .navbar {
   display: flex;
@@ -69,4 +97,93 @@ body {
   font-family: inherit;
   font-weight: 700;
   font-size: 17px;
+}
+
+/* Main
+========================================= */
+
+.main-content {
+  display: flex;
+  font-family: "Bebas Neue Regular", sans-serif;
+}
+
+.main-img {
+  width: 550px;
+}
+
+.home-img {
+  width: 100%;
+  height: 100%;
+}
+
+.home-img path {
+  opacity: 0;
+}
+
+.home-img path:hover {
+  opacity: .75;
+  cursor: pointer;
+}
+
+.main-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #635854;
+}
+
+.counter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.counter-btn {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: opacity .2s linear;
+}
+
+.counter-btn:hover {
+  opacity: .75;
+}
+
+.counter-arrow-down {
+  transform: rotateX(180deg);
+}
+
+.counter {
+  font-size: 74px;
+  color: #635854;
+  margin: 30px;
+}
+
+.btn {
+  font-family: Roboto, sans-serif;
+  border: none;
+  background-color: #3596F5;
+  border-radius: 6px;
+  color: #fff;
+  padding: 16px 36px;
+  transition: opacity .2s linear;
+  cursor: pointer;
+}
+
+.btn:hover {
+  /* background-color: #067bf0; */
+  opacity: .75;
 }
