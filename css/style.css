@@ -1,0 +1,72 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1176px;
+  margin: auto;
+}
+
+.header {
+  background-color: #635854;
+  border-bottom: 4px solid #3596F5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  /* выравниваем элементы по краям блока */
+  align-items: center;
+  text-align: center;
+  /* выравниваем элементы по горизонтали по центру */
+}
+
+.logo {
+  padding-top: 7px;
+}
+
+.navbar-menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  display: block;
+  padding: 9px 40px;
+  font-size: 16px;
+}
+
+.navbar-item:hover {
+  background-color: #3596F5;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-text {
+  display: block;
+  padding-bottom: 3px;
+  text-align: right;
+}
+
+.navbar-phone {
+  text-decoration: none;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+}
